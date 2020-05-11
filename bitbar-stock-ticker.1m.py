@@ -1,4 +1,4 @@
-#!/usr/bin/env LC_ALL=en_US.UTF-8 /usr/local/bin/python3
+#!/usr/bin/env PYTHONIOENCODING=UTF-8 /usr/local/bin/python3
 import urllib.request
 import json
 
