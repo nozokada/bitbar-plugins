@@ -33,5 +33,5 @@ for stock_quote in json_data["quoteResponse"]["result"]:
     price_change = color + '{:.2f}'.format(price_change) + RESET
     price_percent_change = '(' + color + '{:.2f}%'.format(price_percent_change) + RESET + ')'
 
-    print(f'{stock_symbol}    {price_current} {price_change} {price_percent_change}')
+    print(f'{stock_symbol}  {price_current} {price_change} {price_percent_change}')
 
