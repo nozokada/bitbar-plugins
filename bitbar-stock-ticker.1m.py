@@ -1,4 +1,4 @@
-#!/usr/bin/env PYTHONIOENCODING=UTF-8 /usr/local/bin/python3
+#!/usr/bin/env PYTHONIOENCODING=UTF-8 /usr/bin/python3
 import urllib.request
 import json
 
@@ -7,7 +7,7 @@ RED = '\033[31m'
 RESET = '\033[0m'
 
 # Enter your stock symbols here in the format: ["symbol1", "symbol2", ...]
-stock_symbols = ['PFPT']
+stock_symbols = ['ADBE', 'AAPL', 'PFPT']
 
 api_url = 'https://query1.finance.yahoo.com/v7/finance/quote?'
 fields = ['regularMarketPrice', 'regularMarketChange', 'regularMarketChangePercent']
