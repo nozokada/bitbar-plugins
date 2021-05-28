@@ -7,7 +7,7 @@ RED = '\033[31m'
 RESET = '\033[0m'
 
 # Enter your stock symbols here in the format: ["symbol1", "symbol2", ...]
-stock_symbols = ['ADBE', 'PFPT', 'TSLA', 'AAPL', 'WMT']
+stock_symbols = ['AAPL', 'ADBE', 'KO', 'PFPT', 'TSLA', 'WMT']
 
 api_url = 'https://query1.finance.yahoo.com/v7/finance/quote?'
 fields = ['regularMarketPrice', 'regularMarketChange', 'regularMarketChangePercent']
@@ -29,8 +29,4 @@ for stock_quote in json_data["quoteResponse"]["result"]:
     if change < 0:
         color = RED + '▼'
 
-    price_current = '{:.2f}'.format(price_current)
-    price_change = color + '{:.2f}'.format(price_change) + RESET
-    # price_change_percent = '(' + color + '{:.2f}%'.format(price_change_percent) + RESET + ')'
-
-    print(f'{stock_symbol}  {price_current} {price_change}')
+    print(f'{stock_symbol:<6}{price_current:.2f} {color}{price_change:.2f} ({price_change_percent:.2f}%){RESET}')
