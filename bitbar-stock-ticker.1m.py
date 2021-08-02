@@ -7,7 +7,7 @@ RED = '\033[31m'
 RESET = '\033[0m'
 
 # Enter your stock symbols here in the format: ["symbol1", "symbol2", ...]
-stock_symbols = ['AAPL', 'ADBE', 'KO', 'PFPT', 'TSLA', 'WMT']
+stock_symbols = ['AAPL', 'ADBE', 'KO', 'PFPT', 'WMT']
 
 api_url = 'https://query1.finance.yahoo.com/v7/finance/quote?'
 fields = ['regularMarketPrice', 'regularMarketChange', 'regularMarketChangePercent']
